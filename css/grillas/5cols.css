@@ -1,0 +1,53 @@
+/*  GRID OF FIVE   ============================================================================= */
+
+	
+.span_5_of_5 {
+	width: 100%;
+}
+
+.span_4_of_5 {
+  	width: 79.68%; 
+}
+
+.span_3_of_5 {
+  	width: 59.36%; 
+}
+
+.span_2_of_5 {
+  	width: 39.04%;
+}
+
+.span_1_of_5 {
+  	width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_5_of_5 {
+		width: 100%; 
+	}
+	.span_4_of_5 {
+		width: 100%; 
+	}
+	.span_3_of_5 {
+		width: 100%; 
+	}
+	.span_2_of_5 {
+		width: 100%; 
+	}
+	.span_1_of_5 {
+		width: 90%; 
+		margin:0 5%;
+	}
+}
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 970 PIXELS */
+
+@media only screen and (min-width: 480px) and (max-width: 970px) {
+	.span_1_of_5 {
+		width: 46%; 
+		margin: 0 2% 2% 2%;
+	}
+}

@@ -1,0 +1,983 @@
+@charset "UTF-8";
+/*
+Theme Name: Plantilla Abasto Serigrafía
+Theme URI: http://jordicasanueva.cl / http://estudioruiz.co
+Description: Descripcion Template
+Author: Jordi Casanueva
+Author URI: http://jordicasanueva.cl / http://estudioruiz.co
+Version: 0.1.0
+*/
+
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/*
+  ========================================
+  Boxmodel hack
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* ====================
+    Slicknav
+   ==================== */
+
+/* .menu-principal y .menu-mobile es el menu original */
+.menu-desktop,
+.menu-mobile {
+    display:none;
+}
+    
+.slicknav_menu {
+    display:block;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 14px/21px "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+	font-weight: 300;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+    background-color: white;
+}
+
+/* ===================
+    ALL: Abasto Theme
+   =================== */
+
+   #gradient {
+
+   }
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a,
+nav a:visited,
+.proyecto a, .proyecto a:visited,
+.proyecto a:active {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 0 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #444;
+
+      -webkit-transition: color 300ms ease-in-out;
+      -moz-transition: color 300ms ease-in-out;
+      -ms-transition: color 300ms ease-in-out;
+      -o-transition: color 300ms ease-in-out;
+      transition: color 300ms ease-in-out; 
+}
+
+.info-contacto a, .info-contacto a:visited,
+.info-contacto a:active,
+.firma a, .firma a:visited,
+.firma a:active,
+.contenido-nosotros a, 
+.contenido-nosotros a:visited,
+.contenido-nosotros a:active {
+    padding: 5px 0;
+    display:inline-block;
+
+    text-decoration: none;
+
+    color: #444;
+
+      -webkit-transition: color 150ms ease-in-out;
+      -moz-transition: color 150ms ease-in-out;
+      -ms-transition: color 150ms ease-in-out;
+      -o-transition: color 150ms ease-in-out;
+      transition: color 150ms ease-in-out; 
+}
+
+.contenido-nosotros a, 
+.contenido-nosotros a:visited,
+.contenido-nosotros a:active {
+	text-decoration:underline;
+}
+
+nav a:hover,
+.proyecto a:hover,
+.info-contacto a:hover,
+.firma a:hover,
+.contenido-nosotros a:hover {
+    color: #a09b9b;
+}
+
+.proyecto {
+	margin-top:0;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    padding-bottom: 40px;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ===============
+    Slick Slider
+   =============== */
+
+    .single-item {
+    position:relative;
+    overflow:hidden;
+    }
+
+    .slider {
+      width: 100%;
+      position:relative;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      position:relative;
+      display:inline;
+      height:auto;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+/* ============
+    Headroom
+   ============ */
+
+    .headroom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all .3s ease-in-out;
+        z-index: 15;
+    }
+    .headroom--unpinned {top: -75px;}
+    .headroom--pinned {top: 0;}
+
+/* ====================
+    Clases
+   ==================== */
+
+.mayus {
+    text-transform: uppercase;
+}
+
+.minus {
+    text-transform: lowercase;
+}
+
+.regular {
+    font-weight: 300;
+}
+
+.izq {
+    float:left;
+}
+
+.der {
+    float:right;
+}
+
+.tx-izq {
+    text-align: left;
+}
+
+.tx-der {
+    text-align: right;
+}
+
+.tx-cen {
+    text-align: center;
+}
+
+.full {
+    width:100%;
+}
+
+.fs8 {
+    font-size: 0.500em !important;
+}
+
+.fs10 {
+    font-size: 0.625em !important;
+}
+
+.fs11 {
+    font-size: 0.688em !important;
+    line-height: 1.5;
+}
+
+.fs12 {
+    font-size: 0.750em !important;
+}
+
+.fs13 {
+    font-size: 0.813em !important;
+}
+
+.fs14 {
+    font-size: 0.875em !important;
+}
+
+.fs16 {
+    font-size: 1em !important;
+}
+
+.fs17 {
+    font-size: 1.063em !important;
+}
+
+.fs18 {
+    font-size: 1.125em !important;
+}
+
+.fs20 {
+    font-size: 1.25em !important;
+}
+
+.fs25 {
+    font-size: 1.563em !important;
+}
+
+.fs30 {
+    font-size: 1.875em !important;
+}
+
+.fs31 {
+    font-size: 1.938em !important;
+}
+
+.fs40 {
+    font-size: 2.5em !important;
+}
+
+.m-0 {
+    margin:0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-020 {
+    margin: 20px 0 0 0;
+}
+
+.mtb-10 {
+    margin: 10px 0;
+}
+
+.mtb-20 {
+    margin: 20px 0;
+}
+
+.mtb-30 {
+    margin: 30px 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-010 {
+    margin: 0 0 10px 0;
+}
+
+.mb-020 {
+    margin: 0 0 20px 0;
+}
+
+.mb-030 {
+    margin: 0 0 30px 0;
+}
+
+.pb-070 {
+    padding: 0 0 70px 0;
+}
+
+.lh-15 {
+    line-height: 1.5em;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.lh-25 {
+    line-height: 2.5;
+}
+
+.ls-005 {
+    letter-spacing: 0.05em;
+}
+
+.ls-01 {
+    letter-spacing: 0.1em;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.regular {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.gris-1 {
+    color: #636363;
+}
+
+.c111 {
+    color: #111;
+}
+
+.c666 {
+    color: #666;
+}
+
+.cfff {
+    color: #fff;
+}
+
+/* Mobile */
+
+.desktop {
+    display:none;
+}
+
+.mobile {
+    display:inline-block;
+}
+
+.title {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.title img {
+    max-width:100%;
+    height:auto;
+}
+
+/* ============
+    Página de Inicio
+   ============ */
+
+    .proyecto a {
+        opacity: 1;
+        -webkit-transition: opacity .1s ease-out;
+        -moz-transition: opacity .1s ease-out;
+        -o-transition: opacity .1s ease-out;
+        transition: opacity .1s ease-out;
+    }
+
+    .proyecto a:hover {
+        opacity: 0.8;
+    }
+
+    .img-proyecto {
+        padding-top: 40vw;
+        background-size: contain;
+    }
+
+    .img-proyecto-destacado {
+        padding-top: 135%;
+        width: 100%;
+        background-size: cover;
+    }
+
+/* ============
+    Página proyecto
+   ============ */
+
+    .post-meta {
+        margin-top: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .post-meta-key {
+        display:none;
+    } 
+
+    .autor {
+        margin:0;
+        padding:0;
+    }
+
+    .autor li {
+        list-style-type: none;
+    }
+
+    /* Galería de imágenes ficha / Grid */
+
+    /* grid clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    #grid { 
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    #grid .bordes {
+		position: relative;
+    }
+
+    .grid-sizer,
+    .grid-item {
+        width: 100%;
+        float:left;
+    }
+
+    .grid-item img {
+        display:block;
+        max-width:100%;
+        height:auto;
+    }
+
+    .grid-item a:before {
+        /* content: "";
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.1s;  */ 
+    }
+
+    .grid-item a {
+		margin: 20px 0;
+		height: 100%;
+    }
+
+    .grid-item a:hover:before {   
+        opacity: 0.1;
+    }
+
+    /* Galería de imágenes ficha / Main image in popup */
+
+    .popup-gallery a {
+        pointer-events: none !important;
+		text-decoration:none;
+        display: flex;
+        flex-direction: column;
+    }
+
+	.popup-gallery a .titulo-img div {
+		padding-top: 10px;
+		color: #111;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	.popup-gallery a .titulo-img {
+		order: 2;
+	}
+
+    .bordes {
+		padding-bottom: 80px;
+    }
+
+/* ============
+    Nosotros
+   ============ */
+
+    .foto-nosotros img {
+        width:100%;
+		padding: 0 10%;
+        height: auto;
+    }
+
+    .contenido-nosotros p {
+        font-weight: 200;
+    }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 20%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+
+/* ============
+    Estilos
+   ============ */
+
+    .desktop {
+        display:block;
+    }
+
+/* ============
+    Fondo
+   ============ */
+
+   body {
+    background: url(https://abasto.org/wp-content/themes/abasto/img/pattern-abasto-serigrafia.gif);
+	background-size: 350px;
+	background-repeat: repeat;
+   }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        margin: 2em 0 1.5em;
+    }
+
+    nav {
+        float: right;
+        width: 100%;
+    }
+
+    .slicknav_menu {
+        display:none;
+    }
+
+    .menu-desktop {
+        display:block;
+    }
+
+    .menu-desktop a {
+		font-weight: 500;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+
+/* ============
+    Página de Inicio
+   ============ */
+
+    .frase-inicio {
+        width:250px;
+        margin:0 auto;
+    }
+
+    .img-proyecto-destacado {
+        padding-top: 135%;
+        width: 99%;
+        background-size: contain;
+        background-repeat:no-repeat;
+    }
+
+/* ============
+    Posts
+   ============ */
+
+   .contenedor-single {
+    padding: 0 92px;
+   }
+
+/* Galería de imágenes ficha / Grid */
+
+    .grid-sizer,
+    .grid-item {
+        width: 30%;
+		margin: 1.666666666666667%;
+    }
+
+    #grid .bordes {
+		padding: 0;
+    }
+	
+    .grid-item a {
+		margin: 0;
+    }
+	
+	.popup-gallery a .titulo-img div {
+		padding-top: 0;
+	}
+
+/* Galería de imágenes ficha / Main image in popup */
+
+    .popup-gallery a {
+        pointer-events: auto !important;
+    }
+	
+	.popup-gallery a .titulo-img {
+		pointer-events: auto !important;
+
+		opacity: 0;
+
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		background-color: #80808078;
+		
+	}
+	
+	.popup-gallery a .titulo-img div {
+		position: absolute;
+		width:100%;
+		top: 47%;
+		color: white;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	
+	.popup-gallery a .titulo-img:hover {
+        opacity: 1;
+    }
+
+/* ============
+    Nosotros
+   ============ */
+
+    .contenedor-nosotros {
+        padding: 0 30px 40px 30px;
+    }
+
+    .contenido-nosotros {
+        padding: 0 10%;
+		margin: 0 !important;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1000px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /* Galería de imágenes ficha / Main image in popup */
+
+    img.mfp-img {
+      padding: 40px;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
