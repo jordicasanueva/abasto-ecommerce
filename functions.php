@@ -46,29 +46,15 @@
 <?php remove_filter('the_content', 'wpautop'); ?>
 <?php 
 
-add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
-function jk_dequeue_styles( $enqueue_styles ) {
-    unset( $enqueue_styles['woocommerce-general'] );    // Remove the gloss
-    unset( $enqueue_styles['woocommerce-layout'] );     // Remove the layout
-    unset( $enqueue_styles['woocommerce-smallscreen'] );    // Remove the smallscreen optimisation
-    return $enqueue_styles;
-}
-
-function wp_enqueue_woocommerce_style(){
-wp_register_style( 'woocommerce-layout', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-layout.css' );
-if ( class_exists( 'woocommerce' ) ) {
-    wp_enqueue_style( 'woocommerce-layout' );
-}
-
-wp_register_style( 'woocommerce-smallscreen', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-smallscreen.css' ,array(),'4.0.1','only screen and (max-width: 768px)' );
-    if ( class_exists( 'woocommerce' ) ) {
-            wp_enqueue_style( 'woocommerce-smallscreen' );
+//Making jQuery Google API
+function modify_jquery() {
+    if (!is_admin()) {
+        // comment out the next two lines to load the local copy of jQuery
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js', false, '1.8.1');
+        wp_enqueue_script('jquery');
     }
-
-wp_register_style( 'woocommerce-general', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce.css' );
-if ( class_exists( 'woocommerce' ) ) {
-    wp_enqueue_style( 'woocommerce-general' );
-    }
- }
+}
+add_action('init', 'modify_jquery');
 
  ?>

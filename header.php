@@ -15,11 +15,6 @@
         <!-- Títulos cabecera sitio -->
         <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?><?php } ?> <?php wp_title(); ?></title>        
 
-        <!-- Javascripts -->
-
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-        <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
         <!-- Estilos -->
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/normalize.min.css">
         <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css">
