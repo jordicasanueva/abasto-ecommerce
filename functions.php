@@ -44,31 +44,3 @@
     'header-mobile' => 'Header Mobile'
 )); ?>
 <?php remove_filter('the_content', 'wpautop'); ?>
-<?php 
-
-add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
-function jk_dequeue_styles( $enqueue_styles ) {
-    unset( $enqueue_styles['woocommerce-general'] );    // Remove the gloss
-    unset( $enqueue_styles['woocommerce-layout'] );     // Remove the layout
-    unset( $enqueue_styles['woocommerce-smallscreen'] );    // Remove the smallscreen optimisation
-    return $enqueue_styles;
-}
-
-function wp_enqueue_woocommerce_style(){
-wp_register_style( 'woocommerce-layout', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-layout.css' );
-if ( class_exists( 'woocommerce' ) ) {
-    wp_enqueue_style( 'woocommerce-layout' );
-}
-
-wp_register_style( 'woocommerce-smallscreen', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-smallscreen.css' ,array(),'4.0.1','only screen and (max-width: 768px)' );
-    if ( class_exists( 'woocommerce' ) ) {
-            wp_enqueue_style( 'woocommerce-smallscreen' );
-    }
-
-wp_register_style( 'woocommerce-general', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce.css' );
-if ( class_exists( 'woocommerce' ) ) {
-    wp_enqueue_style( 'woocommerce-general' );
-    }
- }
-
- ?>
