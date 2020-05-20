@@ -19,8 +19,6 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
-apply_filters( 'woo_remove_wc_breadcrumbs', true );
-
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -28,6 +26,8 @@ apply_filters( 'woo_remove_wc_breadcrumbs', true );
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
 do_action( 'woocommerce_before_main_content' );
+
+apply_filters( 'woo_remove_wc_breadcrumbs', true );
 
 ?>
 
