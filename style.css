@@ -364,6 +364,10 @@ nav a:hover,
     font-size: 2.5em !important;
 }
 
+.py-3 {
+    padding: 30px 0;
+}
+
 .m-0 {
     margin:0;
 }
