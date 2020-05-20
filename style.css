@@ -710,9 +710,10 @@ nav a:hover,
     Woocommerce
    ============ */
 
-.woocommerce-ordering .columns-4 {
+.woocommerce-ordering ul.products.columns-4 {
     margin:0;
     padding: 30px 0;
+    list-style: none;
 }
 
 .woocommerce-products-header__title {
