@@ -78,5 +78,5 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' ); ?>
         /**
          * Quitar breadcrumb
          */
-        do_action( 'woocommerce_before_main_content' );
+        apply_filters ( 'woocommerce_before_main_content', true );
 ?>
