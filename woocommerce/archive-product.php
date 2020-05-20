@@ -27,8 +27,6 @@ get_header( 'shop' );
  */
 do_action( 'woocommerce_before_main_content' );
 
-apply_filters( 'woo_remove_wc_breadcrumbs', true );
-
 ?>
 
 <header class="woocommerce-products-header">
