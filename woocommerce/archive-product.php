@@ -19,6 +19,8 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+apply_filters( 'woo_remove_wc_breadcrumbs', true );
+
 /**
  * Hook: woocommerce_before_main_content.
  *
