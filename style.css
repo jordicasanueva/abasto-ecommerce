@@ -711,9 +711,9 @@ nav a:hover,
    ============ */
 
 .products {
-    margin:0 !important;
-    padding: 30px 0 !important;
-    list-style: none !important;
+    margin:0;
+    padding: 30px 0;
+    list-style: none;
 }
 
 .woocommerce-products-header__title {
@@ -864,6 +864,16 @@ nav a:hover,
     .contenido-nosotros {
         padding: 0 10%;
 		margin: 0 !important;
+    }
+
+    /* ============
+        Woocommerce
+       ============ */
+
+    .products {
+        margin:0;
+        padding: 30px 0;
+        list-style: none;
     }
 
 }
