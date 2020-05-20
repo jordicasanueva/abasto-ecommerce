@@ -27,7 +27,6 @@ class WC_Structured_Data {
 	public function __construct() {
 		// Generate structured data.
 		add_action( 'woocommerce_before_main_content', array( $this, 'generate_website_data' ), 30 );
-		add_action( 'woocommerce_breadcrumb', array( $this, 'generate_breadcrumblist_data' ), 10 );
 		add_action( 'woocommerce_single_product_summary', array( $this, 'generate_product_data' ), 60 );
 		add_action( 'woocommerce_email_order_details', array( $this, 'generate_order_data' ), 20, 3 );
 
