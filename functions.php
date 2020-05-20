@@ -74,3 +74,9 @@ add_action('init', 'modify_jquery');
     ) );
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' ); ?>
+<?php
+        /**
+         * Quitar breadcrumb
+         */
+        do_action( 'woocommerce_before_main_content' );
+?>
