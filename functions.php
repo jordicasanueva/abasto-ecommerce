@@ -76,10 +76,7 @@ add_action('init', 'modify_jquery');
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' ); ?>
 <?php
         /**
-         * Remove the breadcrumbs 
+         * Quitar breadcrumb
          */
-        add_action( 'wp', 'woo_remove_wc_breadcrumbs' );
-        function woo_remove_wc_breadcrumbs() {
-            remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-        }
+        do_action( 'woocommerce_before_main_content' );
 ?>
