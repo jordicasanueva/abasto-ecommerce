@@ -566,28 +566,34 @@ nav a:hover,
     /* Galería de imágenes ficha / Grid */
 
     /* grid clear fix */
-    .grid:after {
+    .grid:after,
+    .products:after {
       content: '';
       display: block;
       clear: both;
     }
 
-    #grid { 
+    #grid,
+    .products { 
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    #grid .bordes {
+    #grid .bordes,
+    .products .bordes {
 		position: relative;
     }
 
     .grid-sizer,
-    .grid-item {
+    .grid-item,
+    .products,
+    .product {
         width: 100%;
         float:left;
     }
 
-    .grid-item img {
+    .grid-item img,
+    .product img {
         display:block;
         max-width:100%;
         height:auto;
@@ -606,12 +612,14 @@ nav a:hover,
         transition: all 0.1s;  */ 
     }
 
-    .grid-item a {
+    .grid-item a,
+    .product a {
 		margin: 20px 0;
 		height: 100%;
     }
 
-    .grid-item a:hover:before {   
+    .grid-item a:hover:before,
+    .product a:hover:before {   
         opacity: 0.1;
     }
 
