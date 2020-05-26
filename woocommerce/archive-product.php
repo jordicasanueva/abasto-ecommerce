@@ -102,7 +102,6 @@ do_action( 'woocommerce_after_main_content' );
        $('.products').masonry({
            itemSelector: '.product',
            isAnimated: true,
-           columnWidth: '.product',
            percentPosition: true
         }); 
    });
