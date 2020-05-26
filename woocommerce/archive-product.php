@@ -102,8 +102,7 @@ do_action( 'woocommerce_after_main_content' );
 						
 							// init Masonry
 							var $grid = $('.products').masonry({
-							  // options...
-								columnWidth: '.products',
+
 								// selector for entry content
 								itemSelector: '.product',
 								percentPosition: true,
