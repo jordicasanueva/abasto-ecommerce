@@ -77,29 +77,36 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' ); ?>
 ?>
 <?php 
 
-// Load isotope scripts on the shop pages
-add_action( 'wp_footer', function() {
-    if ( wpex_is_woo_shop() || wpex_is_woo_tax() ) {
-        wpex_enqueue_isotope_scripts();
-    }
-} );
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+    unset( $enqueue_styles['woocommerce-general'] );    // Remove the gloss
+    unset( $enqueue_styles['woocommerce-layout'] );     // Remove the layout
+    unset( $enqueue_styles['woocommerce-smallscreen'] );    // Remove the smallscreen optimisation
+    return $enqueue_styles;
+}
 
-// Add masonry classname to WooCommerce grid
-add_filter( 'wpex_woo_loop_wrap_classes', function( $classes ) {
-    if ( is_array( $classes ) ) {
-        $classes[] = 'wpex-masonry-grid';
-    } else {
-        $classes .= ' wpex-masonry-grid';
-    }
-    return $classes;
-} );
+function wp_enqueue_woocommerce_style(){
+wp_register_style( 'woocommerce-layout', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-layout.css' );
+if ( class_exists( 'woocommerce' ) ) {
+    wp_enqueue_style( 'woocommerce-layout' );
+}
 
-// Add masonry class to woo entries
-add_filter( 'post_class', function( $classes, $class = '', $post_id = '' ) {
-    if ( wpex_is_woo_shop() || wpex_is_woo_tax() ) {
-        $classes[] = 'isotope-entry';
+wp_register_style( 'woocommerce-smallscreen', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce-smallscreen.css' ,array(),'4.0.1','only screen and (max-width: 768px)' );
+    if ( class_exists( 'woocommerce' ) ) {
+            wp_enqueue_style( 'woocommerce-smallscreen' );
     }
-    return $classes;
-}, 60, 3 );
+
+wp_register_style( 'woocommerce-general', get_stylesheet_directory_uri() . '/woocommerce/css/woocommerce.css' );
+if ( class_exists( 'woocommerce' ) ) {
+    wp_enqueue_style( 'woocommerce-general' );
+    }
+ }
+?>
+<?php 
+
+add_action( 'wp_enqueue_scripts', 'jk_masonry' );
+function jk_masonry() {
+  wp_enqueue_script( 'jquery-masonry', array( 'jquery' ) );
+}
 
 ?>

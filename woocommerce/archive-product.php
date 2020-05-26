@@ -59,6 +59,7 @@ if ( woocommerce_product_loop() ) {
 
 	woocommerce_product_loop_start();
 
+
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
@@ -95,6 +96,13 @@ if ( woocommerce_product_loop() ) {
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
 do_action( 'woocommerce_after_main_content' );
-
-
-get_footer( 'shop' );
+?>
+<script> 
+   jQuery(document).ready(function($) {
+       $('.products').masonry({
+           itemSelector: '.product',
+           isAnimated: true
+        }); 
+   });
+</script>
+<?php get_footer( 'shop' );
