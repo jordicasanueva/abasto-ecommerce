@@ -97,12 +97,23 @@ if ( woocommerce_product_loop() ) {
  */
 do_action( 'woocommerce_after_main_content' );
 ?>
-<script> 
-   jQuery(document).ready(function($) {
-       $('.products').masonry({
-           itemSelector: '.product',
-           isAnimated: true
-        }); 
-   });
-</script>
+
+                <script type="text/javascript">
+						
+							// init Masonry
+							var $grid = $('.products').masonry({
+							  // options...
+								columnWidth: '.products',
+								// selector for entry content
+								itemSelector: '.product',
+								percentPosition: true,
+								isAnimated: true
+							});
+							// layout Masonry after each image loads
+							$grid.imagesLoaded().progress( function() {
+							  $grid.masonry('layout');
+							});
+
+                </script>
+
 <?php get_footer( 'shop' );
