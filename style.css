@@ -668,7 +668,7 @@ nav a:hover,
     }
 
     #main ul.products li.product {
-        width: 33.3%;
+        width: 33.33333333333%;
         float: left;
         clear: both;
         margin: 0 2px 2px 0;
