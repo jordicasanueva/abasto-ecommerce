@@ -566,34 +566,28 @@ nav a:hover,
     /* Galería de imágenes ficha / Grid */
 
     /* grid clear fix */
-    .grid:after,
-    .products:after {
+    .grid:after {
       content: '';
       display: block;
       clear: both;
     }
 
-    #grid,
-    .products { 
+    #grid { 
         margin-left: -15px;
         margin-right: -15px;
     }
 
-    #grid .bordes,
-    .products .bordes {
+    #grid .bordes {
 		position: relative;
     }
 
     .grid-sizer,
-    .grid-item,
-    .products,
-    .product {
+    .grid-item {
         width: 100%;
         float:left;
     }
 
-    .grid-item img,
-    .product img {
+    .grid-item img {
         display:block;
         max-width:100%;
         height:auto;
@@ -612,14 +606,12 @@ nav a:hover,
         transition: all 0.1s;  */ 
     }
 
-    .grid-item a,
-    .product a {
+    .grid-item a {
 		margin: 20px 0;
 		height: 100%;
     }
 
-    .grid-item a:hover:before,
-    .product a:hover:before {   
+    .grid-item a:hover:before {   
         opacity: 0.1;
     }
 
@@ -646,6 +638,56 @@ nav a:hover,
     .bordes {
 		padding-bottom: 80px;
     }
+
+    /* Woocommerce Grid */
+
+    .woocommerce .products ul li,
+    .woocommerce ul.products li,
+    .woocommerce-page .products ul li,
+    .woocommerce-page ul.products li {
+        list-style: none;
+        width: 24.3%;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    .woocommerce ul.products li.product a img,
+    .woocommerce-page ul.products li.product a img {
+        width: 100%;
+        height: auto;
+        display: block;
+       -webkit-transition: all ease-in-out .2s;
+       -moz-transition: all ease-in-out .2s;
+       -o-transition: all ease-in-out .2s;
+       transition: all ease-in-out .2s;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        float: left;
+        margin: 0 8px 8px 0;
+        padding: 0;
+        position: relative;
+        width: 24.5%;
+    }
+
+    .woocommerce ul.products li.product,
+    .woocommerce-page ul.products li.product {
+        width: 48%;
+        float: left;
+        clear: both;
+        margin: 0 2px 2px 0;
+    }
+
+    @media screen and (max-width: 450px) {
+        .woocommerce ul.products li.product,
+        .woocommerce-page ul.products li.product {
+            width: 100%;
+            float: left;
+            clear: both;
+            margin: 0 0 2px 0;
+            }
+     }
 
 /* ============
     Nosotros
