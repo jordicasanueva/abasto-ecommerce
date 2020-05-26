@@ -687,6 +687,10 @@ nav a:hover,
         display:block;
      }
 
+     .woocommerce-ordering {
+        display:none;
+     }
+
 /* ============
     Nosotros
    ============ */
