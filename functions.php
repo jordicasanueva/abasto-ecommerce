@@ -75,3 +75,31 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' ); ?>
         // Remove the result count from WooCommerce
         remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
 ?>
+<?php 
+
+// Load isotope scripts on the shop pages
+add_action( 'wp_footer', function() {
+    if ( wpex_is_woo_shop() || wpex_is_woo_tax() ) {
+        wpex_enqueue_isotope_scripts();
+    }
+} );
+
+// Add masonry classname to WooCommerce grid
+add_filter( 'wpex_woo_loop_wrap_classes', function( $classes ) {
+    if ( is_array( $classes ) ) {
+        $classes[] = 'wpex-masonry-grid';
+    } else {
+        $classes .= ' wpex-masonry-grid';
+    }
+    return $classes;
+} );
+
+// Add masonry class to woo entries
+add_filter( 'post_class', function( $classes, $class = '', $post_id = '' ) {
+    if ( wpex_is_woo_shop() || wpex_is_woo_tax() ) {
+        $classes[] = 'isotope-entry';
+    }
+    return $classes;
+}, 60, 3 );
+
+?>
