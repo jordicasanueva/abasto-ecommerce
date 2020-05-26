@@ -48,6 +48,9 @@ Template Name: Impresos
 
                 <!-- Masonry -->
 
+                <script src="<?php bloginfo('template_url'); ?>/js/masonry.pkgd.min.js"></script>
+                <script src="<?php bloginfo('template_url'); ?>/js/imagesloaded.pkgd.min.js"></script>
+
                 <script type="text/javascript">
 						
 							// init Masonry
