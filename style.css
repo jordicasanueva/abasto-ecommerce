@@ -683,6 +683,10 @@ nav a:hover,
             }
      }
 
+     .price {
+        display:block;
+     }
+
 /* ============
     Nosotros
    ============ */
