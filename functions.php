@@ -55,7 +55,7 @@ function modify_jquery() {
         wp_enqueue_script('jquery');
     }
 }
-add_action('init', 'modify_jquery');
+add_action('wp', 'modify_jquery');
 
  ?>
 <?php function mytheme_add_woocommerce_support() {
