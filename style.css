@@ -181,9 +181,9 @@ nav a:visited,
 .woocommerce-notices-wrapper a,
 .woocommerce-notices-wrapper a:visited,
 .woocommerce-notices-wrapper a:active,
-.xoo-wsc-content a,
-.xoo-wsc-content a:visited,
-.xoo-wsc-content a:active {
+.xoo-wsc-container a,
+.xoo-wsc-container a:visited,
+.xoo-wsc-container a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -202,7 +202,7 @@ nav a:hover,
 .woocommerce a:hover,
 #abasto-productos a:hover,
 .woocommerce-notices-wrapper a:hover,
-.xoo-wsc-content a:hover {
+.xoo-wsc-container a:hover {
     color: #a09b9b !important;
 }
 
