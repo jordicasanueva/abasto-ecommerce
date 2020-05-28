@@ -826,12 +826,11 @@ nav a:hover,
         color: #ff6269 !important;
     }
 
-    .woocommerce-notices-wrapper {
+    .woocommerce-message {
         border-radius: 15px;
         padding: 15px;
         margin: 0 30px;
         border: #ffffff solid 1px;
-        background-color: #f3fff0;
         color: darkslategray !important;
 }
     }
