@@ -180,10 +180,7 @@ nav a:visited,
 #abasto-productos a:active,
 .woocommerce-notices-wrapper a,
 .woocommerce-notices-wrapper a:visited,
-.woocommerce-notices-wrapper a:active,
-.xoo-wsc-container a:visited,
-.xoo-wsc-container a:active
-.xoo-wsc-container a {
+.woocommerce-notices-wrapper a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -201,8 +198,7 @@ nav a:hover,
 .contenido-nosotros a:hover,
 .woocommerce a:hover,
 #abasto-productos a:hover,
-.woocommerce-notices-wrapper a:hover,
-.xoo-wsc-container a:hover {
+.woocommerce-notices-wrapper a:hover {
     color: #a09b9b !important;
 }
 
