@@ -705,6 +705,15 @@ nav a:hover,
         font-weight: 200;
     }
 
+/* ============
+    Listado Productos
+   ============ */
+
+   .products ul li .add_to_cart_button {
+        display: none;
+   }
+
+   
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -735,7 +744,7 @@ nav a:hover,
 
     nav a {
         float: left;
-        width: 14.285714285714286%;
+        width: 16.66666666666665%%;
         padding: 25px 2%;
         margin-bottom: 0;
     }
