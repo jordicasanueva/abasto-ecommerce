@@ -34,7 +34,19 @@ get_header( 'shop' ); ?>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+			<?php
+
+				global $post;
+				$terms = wp_get_post_terms( $post->ID, 'product_cat' );
+				foreach ( $terms as $term ) $categories[] = $term->slug;
+
+				if ( in_array( 'YOURCATEGORY', $categories ) ) {
+				    woocommerce_get_template_part( 'content', 'single-product-YOURCATEGORY' );
+				} else {
+				    woocommerce_get_template_part( 'content', 'single-product' );
+				}
+
+			?>
 
 		<?php endwhile; // end of the loop. ?>
 
