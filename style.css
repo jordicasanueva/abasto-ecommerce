@@ -174,7 +174,10 @@ nav a:visited,
 
 .woocommerce a,
 .woocommerce a:visited,
-.woocommerce a:active {
+.woocommerce a:active,
+.woocommerce-loop-product__title a,
+.woocommerce-loop-product__title a:visited,
+.woocommerce-loop-product__title a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -190,7 +193,8 @@ nav a:hover,
 .info-contacto a:hover,
 .firma a:hover,
 .contenido-nosotros a:hover,
-.woocommerce a:hover {
+.woocommerce a:hover,
+.woocommerce-loop-product__title a:hover {
     color: #a09b9b !important;
 }
 
@@ -780,6 +784,10 @@ nav a:hover,
 
     .cart thead {
         border-bottom: solid 1px #444 !important;
+    }
+
+    .xoo-wsc-items-count {
+        background-color: #ff6269 !important;
     }
 
 /* ==========================================================================
