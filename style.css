@@ -713,6 +713,10 @@ nav a:hover,
         display:none;
      }
 
+     .woocommerce-terms-and-conditions-wrapper {
+        display:none;
+     }
+
 /* ============
     Nosotros
    ============ */
@@ -752,8 +756,8 @@ nav a:hover,
         padding-bottom: 20px !important;
    }
 
-   .quantitiy input {
-        width: 30px !important;
+   .quantity input {
+        width: 45px !important;
    }
 
    .single_add_to_cart_button,
