@@ -175,9 +175,9 @@ nav a:visited,
 .woocommerce a,
 .woocommerce a:visited,
 .woocommerce a:active,
-.woocommerce-loop-product__title a,
-.woocommerce-loop-product__title a:visited,
-.woocommerce-loop-product__title a:active {
+#abasto-productos a,
+#abasto-productos a:visited,
+#abasto-productos a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -194,7 +194,7 @@ nav a:hover,
 .firma a:hover,
 .contenido-nosotros a:hover,
 .woocommerce a:hover,
-.woocommerce-loop-product__title a:hover {
+#abasto-productos a:hover {
     color: #a09b9b !important;
 }
 
