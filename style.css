@@ -832,10 +832,11 @@ nav a:hover,
 
     .woocommerce-message {
         border-radius: 15px;
-        padding: 15px;
+        padding: 15px 20px;
         margin: 0 30px;
         border: #ffffff solid 1px;
         color: darkslategray !important;
+        background-color: #eafbec;
 }
     }
 
