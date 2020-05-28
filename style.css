@@ -172,12 +172,26 @@ nav a:visited,
 	text-decoration:underline;
 }
 
+.product a,
+.product a:visited,
+.product a:active {
+    text-decoration: none;
+    color: #444;
+
+      -webkit-transition: color 150ms ease-in-out;
+      -moz-transition: color 150ms ease-in-out;
+      -ms-transition: color 150ms ease-in-out;
+      -o-transition: color 150ms ease-in-out;
+      transition: color 150ms ease-in-out; 
+}
+
 nav a:hover,
 .proyecto a:hover,
 .info-contacto a:hover,
 .firma a:hover,
-.contenido-nosotros a:hover {
-    color: #a09b9b;
+.contenido-nosotros a:hover,
+.product a:hover {
+    color: #a09b9b !important;
 }
 
 .proyecto {
@@ -741,7 +755,8 @@ nav a:hover,
         background-color: #ccc !important;
    }
 
-   .product-title {
+   .product-title,
+   .woocommerce-loop-product__title {
         line-height: 1em !important;
         font-size: 1.5em !important;
    }
@@ -749,6 +764,7 @@ nav a:hover,
    .price {
         font-weight: bold !important;
    }
+
 
 
 /* ==========================================================================
