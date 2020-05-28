@@ -710,7 +710,7 @@ nav a:hover,
    ============ */
 
    .products ul li .add_to_cart_button {
-        display: none;
+        display: none !important;
    }
 
 
