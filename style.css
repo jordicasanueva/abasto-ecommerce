@@ -770,7 +770,17 @@ nav a:hover,
         font-weight: bold !important;
    }
 
+    /* ============
+        Carrito de compras
+       ============ */
 
+    .cart {
+        width: 100% !important;
+    }
+
+    .cart thead {
+        border-bottom: solid 1px #444 !important;
+    }
 
 /* ==========================================================================
    Author's custom styles
