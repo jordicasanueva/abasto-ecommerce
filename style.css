@@ -183,10 +183,7 @@ nav a:visited,
 .woocommerce-notices-wrapper a:active,
 .xoo-wsc-content a,
 .xoo-wsc-content a:visited,
-.xoo-wsc-content a:active,
-.xoo-wsc-footer a,
-.xoo-wsc-footer a:visited,
-.xoo-wsc-footer a:active, {
+.xoo-wsc-content a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -205,8 +202,7 @@ nav a:hover,
 .woocommerce a:hover,
 #abasto-productos a:hover,
 .woocommerce-notices-wrapper a:hover,
-.xoo-wsc-content a:hover,
-.xoo-wsc-footer a:hover {
+.xoo-wsc-content a:hover {
     color: #a09b9b !important;
 }
 
@@ -795,10 +791,6 @@ nav a:hover,
 
    .price {
         font-weight: bold !important;
-   }
-
-   .summary .price {
-        font-size: 1.2em !important;
    }
 
     /* ============
