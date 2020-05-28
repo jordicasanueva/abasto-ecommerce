@@ -175,8 +175,8 @@ nav a:visited,
 .woocommerce a,
 .woocommerce a:visited,
 .woocommerce a:active {
-    text-decoration: none;
-    color: #444;
+    text-decoration: none !important;
+    color: #444 !important;
 
       -webkit-transition: color 150ms ease-in-out;
       -moz-transition: color 150ms ease-in-out;
