@@ -177,7 +177,10 @@ nav a:visited,
 .woocommerce a:active,
 #abasto-productos a,
 #abasto-productos a:visited,
-#abasto-productos a:active {
+#abasto-productos a:active,
+.woocommerce-notices-wrapper a,
+.woocommerce-notices-wrapper a:visited,
+.woocommerce-notices-wrapper a:active {
     text-decoration: none !important;
     color: #444 !important;
 
@@ -194,7 +197,8 @@ nav a:hover,
 .firma a:hover,
 .contenido-nosotros a:hover,
 .woocommerce a:hover,
-#abasto-productos a:hover {
+#abasto-productos a:hover,
+.woocommerce-notices-wrapper a:hover {
     color: #a09b9b !important;
 }
 
@@ -741,10 +745,15 @@ nav a:hover,
 
    .screen-reader-text {
         display:block !important;
+        padding-bottom: 10px;
    }
 
    .quantity {
         padding-bottom: 20px !important;
+   }
+
+   .quantitiy input {
+        width: 30px !important;
    }
 
    .single_add_to_cart_button,
@@ -815,6 +824,16 @@ nav a:hover,
         border-bottom: none !important;
         text-decoration: none !important;
         color: #ff6269 !important;
+    }
+
+    .woocommerce-notices-wrapper {
+        border-radius: 15px;
+        padding: 15px;
+        margin: 0 30px;
+        border: #ffffff solid 1px;
+        background-color: #f3fff0;
+        color: darkslategray !important;
+}
     }
 
 /* ==========================================================================
