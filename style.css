@@ -741,6 +741,15 @@ nav a:hover,
         background-color: #ccc !important;
    }
 
+   .product-title {
+        line-height: 1em !important;
+        font-size: 1.5em !important;
+   }
+
+   .price {
+        font-weight: bold !important;
+   }
+
 
 /* ==========================================================================
    Author's custom styles
