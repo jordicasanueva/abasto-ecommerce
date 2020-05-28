@@ -747,7 +747,8 @@ nav a:hover,
         padding-bottom: 20px !important;
    }
 
-   .single_add_to_cart_button {
+   .single_add_to_cart_button,
+   #place_order {
         padding: 10px !important;
         border: 2px solid #444 !important;
         border-radius: 5px !important;
@@ -788,6 +789,23 @@ nav a:hover,
 
     .xoo-wsc-items-count {
         background-color: #ff6269 !important;
+    }
+
+    .woocommerce-billing-fields label {
+        display: block !important;
+        padding: 5px 0 !important;
+    }
+
+    .woocommerce-billing-fields .selection,
+    .woocommerce-billing-fields input {
+          width: 200px !important;
+          @media all and (max-width: 480px) {
+                width: 100% !important;
+          }
+    }
+
+    abbr[title] {
+        border-bottom: none !important;
     }
 
 /* ==========================================================================
