@@ -952,6 +952,25 @@ nav a:hover,
 		font-weight: 500;
     }
 
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 16.66666666666665%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
 /* ============
     WIDE: Main
    ============ */
