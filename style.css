@@ -172,9 +172,9 @@ nav a:visited,
 	text-decoration:underline;
 }
 
-.product a,
-.product a:visited,
-.product a:active {
+.woocommerce a,
+.woocommerce a:visited,
+.woocommerce a:active {
     text-decoration: none;
     color: #444;
 
@@ -190,7 +190,7 @@ nav a:hover,
 .info-contacto a:hover,
 .firma a:hover,
 .contenido-nosotros a:hover,
-.product a:hover {
+.woocommerce a:hover {
     color: #a09b9b !important;
 }
 
