@@ -760,7 +760,8 @@ nav a:hover,
         font-size: 1.5em !important;
    }
 
-   .woocommerce-loop-product__title {
+   .woocommerce-loop-product__title,
+   .price {
         font-size: 0.813em !important;
         line-height: 1.5em !important;
    }
