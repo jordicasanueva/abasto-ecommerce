@@ -755,10 +755,14 @@ nav a:hover,
         background-color: #ccc !important;
    }
 
-   .product-title,
-   .woocommerce-loop-product__title {
-        line-height: 1em !important;
+   .product_title {
+        line-height: 1.5em !important;
         font-size: 1.5em !important;
+   }
+
+   .woocommerce-loop-product__title {
+        font-size: 0.813em !important;
+        line-height: 1.5em !important;
    }
 
    .price {
