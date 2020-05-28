@@ -756,7 +756,8 @@ nav a:hover,
         font-weight: 500 !important;
    }
 
-   .single_add_to_cart_button:hover {
+   .single_add_to_cart_button:hover,
+   #place_order:hover {
         background-color: #ccc !important;
    }
 
@@ -796,9 +797,9 @@ nav a:hover,
         padding: 5px 0 !important;
     }
 
-    .woocommerce-billing-fields .selection,
+    .woocommerce-billing-fields .select2-container,
     .woocommerce-billing-fields input {
-          width: 200px !important;
+          width: 300px !important;
           @media all and (max-width: 480px) {
                 width: 100% !important;
           }
