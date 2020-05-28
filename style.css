@@ -713,6 +713,34 @@ nav a:hover,
         display: none !important;
    }
 
+/* ============
+    Productos
+   ============ */
+
+   .woocommerce-product-gallery__image--placeholder img {
+        width: 100% !important;
+   }
+
+   .screen-reader-text {
+        display:block !important;
+   }
+
+   .quantity {
+        padding-bottom: 20px !important;
+   }
+
+   .single_add_to_cart_button {
+        padding: 10px !important;
+        border: 2px solid #444 !important;
+        border-radius: 5px !important;
+        background-color: transparent !important;
+        font-weight: 500 !important;
+   }
+
+   .single_add_to_cart_button:hover {
+        background-color: #ccc !important;
+   }
+
 
 /* ==========================================================================
    Author's custom styles
