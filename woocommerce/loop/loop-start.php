@@ -19,4 +19,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?> m-0 py-3">
+<ul id="abasto-productos" class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?> m-0 py-3">

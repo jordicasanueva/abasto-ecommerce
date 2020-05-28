@@ -709,7 +709,7 @@ nav a:hover,
     Listado Productos
    ============ */
 
-   .products ul li .add_to_cart_button {
+   #abasto-productos .add_to_cart_button {
         display: none !important;
    }
 
