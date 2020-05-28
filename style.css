@@ -799,14 +799,22 @@ nav a:hover,
 
     .woocommerce-billing-fields .select2-container,
     .woocommerce-billing-fields input {
-          width: 300px !important;
+          width: 350px !important;
           @media all and (max-width: 480px) {
                 width: 100% !important;
           }
     }
 
+    #billing_company_field,
+    #billing_address_2_field,
+    #billing_postcode_field {
+        display:none !important;
+    }
+
     abbr[title] {
         border-bottom: none !important;
+        text-decoration: none !important;
+        color: #ff6269 !important;
     }
 
 /* ==========================================================================
