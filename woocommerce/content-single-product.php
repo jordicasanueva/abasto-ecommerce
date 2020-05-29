@@ -35,8 +35,6 @@ if ( post_password_required() ) {
 
 	<div class="col span_2_of_3">
 
-    <section class="single-item">
-
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
@@ -46,8 +44,6 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_before_single_product_summary' );
 	?>
-
-	</section>
 
 	</div>
 
