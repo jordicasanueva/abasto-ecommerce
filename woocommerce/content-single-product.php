@@ -81,4 +81,48 @@ if ( post_password_required() ) {
 	?>
 </div>
 
+  <script src="<?php bloginfo('template_url'); ?>/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+
+    var slideCount = null;
+
+    $( document ).ready(function() {
+
+      $(".single-item").slick({
+        infinite: false,
+        fade: true,
+        adaptiveHeight: false,
+        accesibility: true,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        adaptiveHeight: !0,
+        speed: 0,
+        swipe: !1,
+        cssEase: "linear"
+      });
+      $(".single-item")[0].slick.setPosition();
+    });
+
+    $(".single-item").on('init', function(event, slick){
+      slideCount = slick.slideCount;
+      setSlideCount();
+      setCurrentSlideNumber(slick.currentSlide);
+    });
+
+    $(".single-item").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      setCurrentSlideNumber(nextSlide);
+    });
+
+    function setSlideCount() {
+      var $el = $('.slide-count-wrap').find('.total');
+      $el.text(slideCount);
+    }
+
+    function setCurrentSlideNumber(currentSlide) {
+      var $el = $('.slide-count-wrap').find('.current');
+      $el.text(currentSlide + 1);
+    }
+
+</script>
+
 <?php do_action( 'woocommerce_after_single_product' ); ?>
