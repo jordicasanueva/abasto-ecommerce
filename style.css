@@ -837,7 +837,6 @@ nav a:hover,
     .woocommerce-message {
         border-radius: 15px;
         padding: 15px 20px;
-        margin: 0 30px;
         border: #ffffff solid 1px;
         color: darkslategray !important;
         background-color: #eafbec;
@@ -922,6 +921,71 @@ nav a:hover,
     margin: 0;
     padding: 20px 0;
 }
+
+/* ============
+    Woocommerce Checkout
+   ============ */
+
+   .woocommerce-order h2 {
+      margin-top:0 !important;
+   }
+
+   .woocommerce-notice--success {
+      padding: 110px 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5em !important;
+      background-color: #eafbec;
+      border-radius: 15px;
+      border: 19px solid #d5eadf;
+   }
+
+   .woocommerce-order-overview {
+      padding: 20px;
+      background-color: #f1f8ff;
+      border-radius: 15px;
+      list-style: none;
+      line-height: 2;
+      color: darkblue;
+      text-align: center;
+   }
+
+   .woocommerce-bacs-bank-details {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      line-height: 2;
+      color: #535d5d;
+   }
+
+   .woocommerce-order-details {
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #fdffe2;
+      line-height: 2;
+      color: #67673d;
+   }
+
+   .woocommerce-table--order-details {
+      text-align: left;
+      width: 100%;
+   }
+
+   .woocommerce-table--order-details thead {
+      border-bottom: 1px solid #f3eb8f;
+   }
+
+   .woocommerce-table--order-details thead th {
+      padding-bottom: 10px;
+   }
+
+   .woocommerce-table--order-details tbody tr td {
+      padding: 10px 0;
+   }
+
+   .tfoot th {
+      padding-top:20px;
+   }
 
 
 @media only screen and (min-width: 768px) {
