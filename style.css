@@ -851,7 +851,7 @@ nav a:hover,
     Woocommerce Checkout
    ============ */
 
-   .woocommerce-order h2 {
+   .wc-bacs-bank-details-heading {
       margin-top:0 !important;
    }
 
