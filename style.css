@@ -855,11 +855,14 @@ nav a:hover,
       margin-top:0 !important;
    }
 
+   .woocommerce-notice--success p {
+      font-size: 1.5em !important;
+   }
+
    .woocommerce-notice--success {
       padding: 110px 20px;
       text-align: center;
       font-weight: bold;
-      font-size: 1.5em !important;
       background-color: #eafbec;
       border-radius: 15px;
       border: 19px solid #d5eadf;
