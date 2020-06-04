@@ -924,6 +924,10 @@ nav a:hover,
     .wpgs--with-images {
         padding: 0 40px 40px 40px !important;
     }
+
+    .a3dg-navbar-control {
+        display:none !important;
+    }
     
 
 /* ==========================================================================
